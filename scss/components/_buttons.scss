@@ -1,0 +1,59 @@
+.btn {
+	margin:0;
+	outline: none;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 5px 40px;
+	text-align: center;
+	position: relative;
+	color: $color-yellow;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	background-image: none;
+	background: transparent;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	@include transition(.2s);
+	border: 2px solid $color-yellow;
+
+	&:hover {
+		color: #fff;
+		border-color: #fff;
+		text-decoration: none;
+	}
+
+	&:active {
+		top: 1px;
+	}
+}
+
+.btn-medium {
+	font-size: 18px;
+	font-weight: 400;
+	padding: 8px 20px;
+	text-transform: uppercase;
+}
+
+.btn-video {
+	padding-left: 60px;
+
+	&:before {
+		top: 0;
+		left: 0;
+		width: 32px;
+		height: 100%;
+		content: ' ';
+		position: absolute;
+		background: $color-yellow url("../img/icon-play-sm.png") 50% 50% no-repeat;
+	}
+
+	&:hover {
+
+		&:before {
+			background-color: #fff;
+		}
+	}
+}

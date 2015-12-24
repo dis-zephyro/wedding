@@ -1,0 +1,84 @@
+.b05 {
+	height: 1215px;
+	padding-top: 30px;
+	background: url("../img/b05_bg.jpg") 50% 0 no-repeat;
+
+	h2 {
+		padding-bottom: 10px;
+		margin-bottom: 30px;
+
+		&:before {
+			width: 440px;
+			margin-left: -220px;
+		}
+	}
+
+	.service {
+		margin: 0 -4px;
+
+		li {
+			float: left;
+			width: 346px;
+			height: 232px;
+			overflow: hidden;
+			position: relative;
+			margin: 0 15px 30px 15px;
+
+			img {
+				@include transition(.5s ease-out);
+			}
+
+			&:hover {
+
+				img {
+					-webkit-transform: scale(1.2);
+					-moz-transform: scale(1.2);
+					-o-transform: scale(1.2);
+					transform: scale(1.2);
+					@include transition(.5s ease-out);
+				}
+			}
+		}
+
+		.service-image {
+			width: 349px;
+			height: 232px;
+			overflow: hidden;
+		}
+
+		.service-text {
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 95px;
+			color: #ffffff;
+			display: table;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 16px;
+			font-style: italic;
+			text-align: center;
+			position: absolute;
+			background: rgba(0,0,0, 0.8);
+
+			span {
+				width: 100%;
+				height: 95px;
+				padding: 0 25px;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+.divider-block {
+	color: #fff;
+	padding: 15px 0;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 30px;
+	text-align: center;
+	background: #1c1c1c;
+}

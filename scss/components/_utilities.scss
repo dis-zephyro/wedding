@@ -1,0 +1,59 @@
+// Floats
+// -------------------------
+
+.clearfix {
+	@include clearfix;
+}
+.center-block {
+	@include center-block;
+}
+.pull-right {
+	float: right !important;
+}
+.pull-left {
+	float: left !important;
+}
+
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+
+// Image replacement
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+
+.hide {
+	visibility: hidden;
+	display: none !important;
+}
+.show {
+	visibility: visible;
+	display: block !important;
+}
+.invisible {
+	visibility: hidden;
+}
+
+.img-responsive {
+	@include img-responsive();
+}

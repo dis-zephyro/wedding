@@ -1,0 +1,125 @@
+* {
+	@include box-sizing(border-box);
+}
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+
+
+// Body reset
+
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+body {
+	font-family: $font-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $text-color;
+	background-color: $body-bg;
+}
+
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+
+.container {
+	width: 1220px;
+	margin: 0 auto;
+	padding: 0 50px;
+	position: relative;
+	@include clearfix();
+}
+
+
+// Links
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+
+}
+
+
+// Headings
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 25px;
+	position: relative;
+	text-align: center;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+
+	&:before {
+		left: 50%;
+		bottom: 0;
+		width: 626px;
+		content: ' ';
+		position: absolute;
+		margin-left: -313px;
+		border-bottom: 2px solid $color-yellow;
+	}
+}
+
+h3 {
+	font-size: 23px;
+	font-weight: 300;
+	line-height: 25px;
+	font-style: italic;
+	position: relative;
+	text-align: center;
+	margin-bottom: 10px;
+	color: $color-yellow;
+
+	span {
+		padding-bottom: 8px;
+		display: inline-block;
+		border-bottom: 1px solid $color-yellow;
+	}
+}
+
+p {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.color-yellow {
+	color: $color-yellow;
+}
+
+.fancybox-skin {
+	background: transparent;
+}

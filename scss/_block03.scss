@@ -1,0 +1,52 @@
+.b03 {
+	height: 720px;
+	padding-top: 60px;
+	background: url("../img/b03_bg.jpg") 50% 0 no-repeat;
+
+	h2 {
+		margin-bottom: 80px;
+	}
+
+	.advantage {
+		float: left;
+		width: 380px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 22px;
+		margin-left: 60px;
+		color: $color-yellow;
+
+		li {
+			width: 100%;
+			display: table;
+
+			&.item1 {
+				background: url("../img/b03_item1.png") 0 50% no-repeat;
+			}
+
+			&.item2 {
+				background: url("../img/b03_item2.png") 0 50% no-repeat;
+			}
+
+			&.item3 {
+				background: url("../img/b03_item3.png") 0 50% no-repeat;
+			}
+
+			&.item4 {
+				background: url("../img/b03_item4.png") 0 50% no-repeat;
+			}
+
+			span {
+				height: 100px;
+				display: table-cell;
+				padding-left: 130px;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.video {
+		float: right;
+		width: 680px;
+	}
+}

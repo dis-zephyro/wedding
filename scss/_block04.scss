@@ -1,0 +1,113 @@
+.b04 {
+	height: 1185px;
+	padding-top: 30px;
+	background: url("../img/b04_bg.jpg") 50% 0 no-repeat;
+
+	h2 {
+		margin-bottom: 40px;
+
+		&:before {
+			width: 500px;
+			margin-left: -250px;
+		}
+	}
+
+	.review-slider {
+		position: relative;
+
+		.review-slider-item {
+			outline: none;
+		}
+
+		.slick-dots {
+			font-size: 0;
+			line-height: 0;
+			text-align: center;
+
+			li {
+				width: 14px;
+				height: 14px;
+				margin: 0 10px;
+				overflow: hidden;
+				display: inline-block;
+
+				button {
+					margin: 0;
+					padding: 0;
+					width: 14px;
+					height: 14px;
+					outline: none;
+					display: inline-block;
+					background: transparent;
+					border: 1px solid #6c6a63;
+					@include border-radius(50%);
+				}
+
+				&.slick-active {
+
+					button {
+						background: #6c6a63;
+					}
+				}
+			}
+		}
+	}
+
+	.review {
+		height: 300px;
+		padding: 20px 50px;
+		margin: 0 40px 30px 40px;
+		border: 18px solid #414040;
+
+		.review-image {
+			float: left;
+			width: 222px;
+			height: 222px;
+			overflow: hidden;
+			margin-left: 25px;
+			@include border-radius(50%);
+		}
+
+		.review-box {
+			color: #fff;
+			float: right;
+			width: 630px;
+			overflow: hidden;
+			position: relative;
+
+			.review-text {
+				height: 160px;
+				font-size: 18px;
+				font-weight: 300;
+				line-height: 22px;
+				font-style: italic;
+				position: relative;
+				margin-bottom: 18px;
+				margin-top: 15px;
+			}
+
+			.review-author {
+				font-size: 28px;
+				font-weight: 300;
+				line-height: 30px;
+				margin-bottom: 10px;
+			}
+		}
+
+		.mCSB_scrollTools {
+
+			.mCSB_draggerRail {
+
+
+			}
+
+			.mCSB_dragger {
+
+				.mCSB_dragger_bar {
+					background: $color-yellow;
+				}
+			}
+		}
+
+	}
+}

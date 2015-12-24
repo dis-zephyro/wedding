@@ -1,0 +1,37 @@
+@keyframes scaleUp {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform:scale(1);
+		opacity:1;
+	}
+
+}
+
+@-webkit-keyframes scaleUp {
+	0%   {
+		-webkit-transform: scale(0);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity:1;
+	}
+
+}
+
+.scaleUp {
+	-webkit-animation-name: scaleUp;
+	animation-name: scaleUp;
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0px);
+		opacity:1;
+	}
+
+}

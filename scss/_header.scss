@@ -1,0 +1,138 @@
+.header {
+	z-index: 500;
+	height: 95px;
+	background: #191919;
+
+	.topnav {
+		float: left;
+		z-index: 999;
+		width: 920px;
+		position: relative;
+
+		li {
+			float: left;
+
+			a {
+				color: #fff;
+				height: 95px;
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 30px;
+				padding: 30px 10px;
+				text-align: center;
+				white-space: nowrap;
+				display: inline-block;
+				text-decoration: none;
+				background: transparent;
+				text-transform: uppercase;
+				border-bottom: 5px solid transparent;
+
+				&:hover {
+					background: #222;
+					color: $color-yellow;
+					border-bottom-color: $color-yellow;
+				}
+			}
+		}
+	}
+
+	.logo {
+		top: 0;
+		left: 50%;
+		width: 188px;
+		height: 188px;
+		margin-left: -94px;
+		position: absolute;
+		@include border-radius(50%);
+		background: #191919 url("../img/logo.png") 50% 50% no-repeat;
+	}
+
+	.contact {
+		float: right;
+		width: 180px;
+		height: 95px;
+		padding-top: 20px;
+		text-align: right;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.phone {
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 24px;
+			padding-left: 30px;
+			margin-bottom: 5px;
+			display: inline-block;
+			background: url("../img/icon-phone.png") 0 50% no-repeat;
+		}
+
+		.email {
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 20px;
+			padding-left: 30px;
+			display: inline-block;
+			background: url("../img/icon-mail.png") 0 50% no-repeat;
+
+			&:hover {
+				color: $color-yellow;
+			}
+		}
+	}
+
+	.callback-block {
+		top: 100%;
+		right: 38px;
+		height: 42px;
+		width: 350px;
+		position: absolute;
+
+		span {
+			color: #fff;
+			width: 150px;
+			float: right;
+			display: block;
+			font-size: 10px;
+			padding: 3px 7px;
+			line-height: 12px;
+			text-align: right;
+			text-transform: uppercase;
+		}
+
+		.btn-callback {
+			margin:0;
+			float: right;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			font-size: 13px;
+			font-weight: 700;
+			line-height: 20px;
+			text-align: center;
+			position: relative;
+			padding: 11px 25px;
+			background: #191919;
+			color: $color-yellow;
+			display: inline-block;
+			text-decoration: none;
+			vertical-align: middle;
+			background-image: none;
+			text-transform: uppercase;
+			touch-action: manipulation;
+			@include transition(.2s);
+
+			&:hover {
+				background: #222;
+				color: $color-yellow;
+				text-decoration: none;
+			}
+
+			&:active {
+				top: 1px;
+			}
+		}
+	}
+}

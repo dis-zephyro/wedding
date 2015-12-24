@@ -1,0 +1,59 @@
+.b01 {
+	color: #fff;
+	text-align: center;
+	background: url("../img/b01_bg.jpg") 50% 0 no-repeat;
+
+	.container {
+		height: 600px;
+		padding-top: 115px;
+	}
+
+	.text1 {
+		font-size: 37px;
+		font-weight: 700;
+		line-height: 40px;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		font-size: 72px;
+		font-weight: 700;
+		line-height: 72px;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+	}
+
+	.text2 {
+		font-size: 30px;
+		font-weight: 300;
+		line-height: 32px;
+		font-style: italic;
+		margin-bottom: 50px;
+	}
+
+	.text-border {
+		width: 630px;
+		margin: 0 auto;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 20px;
+		padding: 14px 10px;
+		color: $color-yellow;
+		border: 2px solid $color-yellow;
+	}
+
+	.scroll-link {
+		left: 50%;
+		color: #fff;
+		width: 420px;
+		bottom: 40px;
+		font-size: 10px;
+		position: absolute;
+		margin-left: -210px;
+		padding-bottom: 25px;
+		text-decoration: none;
+		text-transform: uppercase;
+		background: url("../img/arrow-down.png") 50% 100% no-repeat;
+	}
+}

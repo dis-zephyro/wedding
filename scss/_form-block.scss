@@ -1,0 +1,32 @@
+.form-block {
+	color: #fff;
+	height: 240px;
+	padding: 30px 0;
+	background: #1c1c1c;
+
+	h2 {
+		margin-bottom: 25px;
+
+		&:before {
+			width: 1040px;
+			margin-left: -520px;
+		}
+	}
+
+	.form {
+		margin: 0 25px;
+		padding: 30px 50px;
+		border: 4px dotted #444;
+
+		.form-group {
+			float: left;
+			width: 340px;
+			margin-bottom: 0;
+			margin-right: 20px;
+		}
+
+		.btn {
+			float: right;
+		}
+	}
+}
