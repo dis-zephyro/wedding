@@ -1,5 +1,6 @@
 .b02 {
 	height: 1000px;
+	overflow: hidden;
 	padding-top: 35px;
 	background: url("../img/b02_bg.jpg") 50% 0 no-repeat;
 
@@ -10,7 +11,6 @@
 			margin-left: -220px;
 		}
 	}
-
 
 	.portfolio {
 		width: 1120px;

@@ -1,4 +1,67 @@
 .b07 {
 	height: 470px;
 	background: url("../img/b07_bg.jpg") 50% 0 no-repeat;
+
+	h2 {
+		text-align: left;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+
+		&:before {
+			left: 0;
+			width: 280px;
+			margin-left: 0;
+		}
+	}
+
+	.address {
+		width: 50%;
+		float: left;
+		height: 470px;
+		padding-top: 50px;
+
+		.address-inner {
+			width: 540px;
+			float: right;
+		}
+
+		ul {
+			margin-bottom: 40px;
+		}
+
+		li {
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 24px;
+			margin-bottom: 10px;
+			padding: 4px 0 4px 35px;
+
+			&.adr {
+				background: url("../img/b07_adr.png") 0 50% no-repeat;
+			}
+
+			&.phone {
+				background: url("../img/b07_phone.png") 0 50% no-repeat;
+			}
+
+			&.email {
+				background: url("../img/b07_mail.png") 0 50% no-repeat;
+			}
+
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.map {
+		width: 50%;
+		float: right;
+		height: 470px;
+	}
+
+	#map {
+		height: 470px;
+	}
 }

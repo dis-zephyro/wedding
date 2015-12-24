@@ -406,6 +406,8 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
+  padding-top: 95px;
+  min-width: 1250px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
@@ -581,7 +583,7 @@ label {
   display: block; }
 
 .form-group {
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
 
 .clearfix:before, .clearfix:after {
   content: " ";
@@ -735,8 +737,12 @@ label {
   display: none; }
 
 .header {
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 500;
   height: 95px;
+  position: fixed;
   background: #191919; }
   .header .topnav {
     float: left;
@@ -857,6 +863,44 @@ label {
   font-style: italic;
   text-align: center; }
 
+.modal-box {
+  width: 510px;
+  padding: 40px;
+  background: #000; }
+  .modal-box .modal-box-inner {
+    padding: 35px 40px;
+    border: 1px dashed #575757; }
+  .modal-box .modal-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  .modal-box .modal-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #efd34d; }
+  .modal-box .btn {
+    width: 100%; }
+
+.done {
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  padding: 100px 20px; }
+  .done .done-title {
+    color: #3b8575;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 40px; }
+
 .b01 {
   color: #fff;
   text-align: center;
@@ -906,6 +950,7 @@ label {
 
 .b02 {
   height: 1000px;
+  overflow: hidden;
   padding-top: 35px;
   background: url("../img/b02_bg.jpg") 50% 0 no-repeat; }
   .b02 h2:before {
@@ -1231,10 +1276,70 @@ label {
     .b06 h2:before {
       width: 250px;
       margin-left: -125px; }
+  .b06 .scheme {
+    padding-top: 25px;
+    background: url("../img/b06_item_bg.png") 70px 0 no-repeat; }
+    .b06 .scheme li {
+      float: left;
+      width: 33.33%;
+      height: 240px;
+      text-align: center; }
+      .b06 .scheme li:hover .scheme-image {
+        -webkit-animation-name: hvr-wobble-vertical;
+        animation-name: hvr-wobble-vertical;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .b06 .scheme .scheme-text {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 16px; }
 
 .b07 {
   height: 470px;
   background: url("../img/b07_bg.jpg") 50% 0 no-repeat; }
+  .b07 h2 {
+    text-align: left;
+    padding-bottom: 10px;
+    margin-bottom: 20px; }
+    .b07 h2:before {
+      left: 0;
+      width: 280px;
+      margin-left: 0; }
+  .b07 .address {
+    width: 50%;
+    float: left;
+    height: 470px;
+    padding-top: 50px; }
+    .b07 .address .address-inner {
+      width: 540px;
+      float: right; }
+    .b07 .address ul {
+      margin-bottom: 40px; }
+    .b07 .address li {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 10px;
+      padding: 4px 0 4px 35px; }
+      .b07 .address li.adr {
+        background: url("../img/b07_adr.png") 0 50% no-repeat; }
+      .b07 .address li.phone {
+        background: url("../img/b07_phone.png") 0 50% no-repeat; }
+      .b07 .address li.email {
+        background: url("../img/b07_mail.png") 0 50% no-repeat; }
+      .b07 .address li a {
+        color: #fff;
+        text-decoration: none; }
+  .b07 .map {
+    width: 50%;
+    float: right;
+    height: 470px; }
+  .b07 #map {
+    height: 470px; }
 
 .form-block {
   color: #fff;

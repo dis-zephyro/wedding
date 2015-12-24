@@ -12,4 +12,41 @@
 			margin-left: -125px;
 		}
 	}
+
+	.scheme {
+		padding-top: 25px;
+		background: url("../img/b06_item_bg.png") 70px 0 no-repeat;
+
+		li {
+			float: left;
+			width: 33.33%;
+			height: 240px;
+			text-align: center;
+
+			&:hover {
+
+				.scheme-image {
+					-webkit-animation-name: hvr-wobble-vertical;
+					animation-name: hvr-wobble-vertical;
+					-webkit-animation-duration: 1s;
+					animation-duration: 1s;
+					-webkit-animation-timing-function: ease-in-out;
+					animation-timing-function: ease-in-out;
+					-webkit-animation-iteration-count: 1;
+					animation-iteration-count: 1;
+				}
+			}
+		}
+
+		.scheme-image {
+
+		}
+
+		.scheme-text {
+			font-size: 13px;
+			font-weight: 700;
+			line-height: 16px;
+		}
+	}
+
 }

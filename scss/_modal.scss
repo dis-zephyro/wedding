@@ -1,0 +1,51 @@
+.modal-box {
+	width: 510px;
+	padding: 40px;
+	background: #000;
+
+	.modal-box-inner {
+		padding: 35px 40px;
+		border: 1px dashed #575757;
+	}
+
+	.modal-title {
+		color: #fff;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 24px;
+		text-align: center;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+
+	.modal-text {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 18px;
+		text-align: center;
+		margin-bottom: 30px;
+		padding-bottom: 25px;
+		text-transform: uppercase;
+		border-bottom: 2px solid $color-yellow;
+	}
+
+	.btn {
+		width: 100%;
+	}
+}
+
+
+
+.done {
+	color: #000;
+	font-size: 16px;
+	text-align: center;
+	padding: 100px 20px;
+
+	.done-title {
+		color: #3b8575;
+		display: block;
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+}
