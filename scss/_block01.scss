@@ -1,7 +1,52 @@
 .b01 {
 	color: #fff;
+	height: 600px;
 	text-align: center;
+	position: relative;
 	background: url("../img/b01_bg.jpg") 50% 0 no-repeat;
+
+
+	.video-inner {
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		overflow: hidden;
+		position: relative;
+
+		video {
+			z-index: 2;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: block;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+		}
+
+		.video-pattern {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 4;
+			content: ' ';
+			position: absolute;
+			background: url("../img/video-pattern.png");
+		}
+	}
+
+	.b01-content {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 20;
+		position: absolute;
+	}
 
 	.container {
 		height: 600px;

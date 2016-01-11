@@ -406,8 +406,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  padding-top: 95px;
-  min-width: 1250px;
+  min-width: 1260px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
@@ -737,12 +736,9 @@ label {
   display: none; }
 
 .header {
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 500;
   height: 95px;
-  position: fixed;
+  position: relative;
   background: #191919; }
   .header .topnav {
     float: left;
@@ -772,6 +768,7 @@ label {
   .header .logo {
     top: 0;
     left: 50%;
+    z-index: 999;
     width: 188px;
     height: 188px;
     margin-left: -94px;
@@ -783,7 +780,7 @@ label {
     background: #191919 url("../img/logo.png") 50% 50% no-repeat; }
   .header .contact {
     float: right;
-    width: 180px;
+    width: 195px;
     height: 95px;
     padding-top: 20px;
     text-align: right; }
@@ -903,8 +900,44 @@ label {
 
 .b01 {
   color: #fff;
+  height: 600px;
   text-align: center;
+  position: relative;
   background: url("../img/b01_bg.jpg") 50% 0 no-repeat; }
+  .b01 .video-inner {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    position: relative; }
+    .b01 .video-inner video {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto; }
+    .b01 .video-inner .video-pattern {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 4;
+      content: ' ';
+      position: absolute;
+      background: url("../img/video-pattern.png"); }
+  .b01 .b01-content {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    position: absolute; }
   .b01 .container {
     height: 600px;
     padding-top: 115px; }
@@ -977,7 +1010,6 @@ label {
     .b02 .portfolio .portfolio-image {
       width: 100%;
       display: block;
-      cursor: pointer;
       overflow: hidden;
       margin-bottom: 9px;
       position: relative; }
@@ -995,6 +1027,7 @@ label {
         transition: 0.5s ease-out; }
     .b02 .portfolio .portfolio-play {
       width: 100%;
+      height: 234px;
       display: block;
       cursor: pointer;
       overflow: hidden;
@@ -1003,6 +1036,7 @@ label {
       .b02 .portfolio .portfolio-play:before {
         top: 50%;
         left: 50%;
+        z-index: 5;
         content: ' ';
         width: 106px;
         height: 106px;
@@ -1010,6 +1044,18 @@ label {
         margin-left: -58px;
         position: absolute;
         background: url("../img/play.png") 0 0 no-repeat; }
+      .b02 .portfolio .portfolio-play video {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%; }
     .b02 .portfolio .portfolio-text {
       height: 479px;
       z-index: 100;
@@ -1043,52 +1089,53 @@ label {
 .wedding {
   width: 1120px;
   background: #000;
-  padding: 40px 30px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px; }
-  .wedding .wedding-text {
+  padding: 40px 30px 40px 30px; }
+  .wedding .wedding-row {
+    margin: 0 -10px;
+    position: relative; }
+    .wedding .wedding-row:before, .wedding .wedding-row:after {
+      content: " ";
+      display: table; }
+    .wedding .wedding-row:after {
+      clear: both; }
+    .wedding .wedding-row .wedding-col {
+      width: 50%;
+      float: left;
+      padding: 0 10px; }
+    .wedding .wedding-row .wedding-col-left {
+      float: left;
+      width: 660px;
+      padding: 0 10px; }
+    .wedding .wedding-row .wedding-col-right {
+      float: left;
+      width: 420px;
+      padding: 0 10px; }
+    .wedding .wedding-row .wedding-single {
+      padding: 0 10px; }
+  .wedding .wedding-head-text {
     color: #fff;
     float: left;
-    width: 400px;
+    width: 430px;
+    padding: 0 10px;
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
     font-style: italic;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
+  .wedding .wedding-head-image {
+    float: left;
+    width: 650px;
+    padding: 0 10px;
+    margin-bottom: 20px; }
   .wedding .wedding-image {
-    width: 633px;
-    float: right; }
-    .wedding .wedding-image img {
-      display: none; }
-      .wedding .wedding-image img.img1 {
-        display: block; }
-  .wedding .wedding-thumbs {
-    margin: 0 -6px;
     overflow: hidden;
-    padding-top: 45px;
-    position: relative; }
-    .wedding .wedding-thumbs li {
-      float: left;
-      width: 11.11%;
-      padding: 0 6px;
-      cursor: pointer;
-      overflow: hidden;
-      position: relative; }
-      .wedding .wedding-thumbs li:before {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: none;
-        content: ' ';
-        position: absolute;
-        background: rgba(0, 0, 0, 0.5) url("../img/icon-loop-yellow.png") 50% 50% no-repeat; }
-      .wedding .wedding-thumbs li:hover:before {
-        display: block; }
-      .wedding .wedding-thumbs li.active:before {
-        display: block; }
+    position: relative;
+    margin-bottom: 20px; }
+
+.wedding-inner {
+  position: relative;
+  height: auto !important; }
 
 .b03 {
   height: 720px;
@@ -1299,7 +1346,9 @@ label {
       line-height: 16px; }
 
 .b07 {
+  width: 100%;
   height: 470px;
+  overflow: hidden;
   background: url("../img/b07_bg.jpg") 50% 0 no-repeat; }
   .b07 h2 {
     text-align: left;

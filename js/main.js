@@ -1,12 +1,20 @@
-$('.topnav li a').click(function(){
+$('.topnav li a, .scroll-link').click(function(){
     var str=$(this).attr('href');
-    $.scrollTo(str, 500, {offset: -100});
+    $.scrollTo(str, 500, {offset: 0});
     return false;
 });
 
 
 $(".btn-modal").fancybox({
     'padding' : 0
+});
+
+$(".btn-modal-photo").fancybox({
+    'padding'   : 0,
+    'scrolling' : 'no',
+    'tpl'       : {
+        wrap     : '<div class="fancybox-wrap" tabIndex="-1"><div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner wedding-inner"></div></div></div></div>'
+    }
 });
 
 
@@ -91,6 +99,20 @@ function init(){
 
 $(document).ready(function() {
 
+    // Анимация
+    var Android = navigator.userAgent.search(/Android/i);
+    var iPhone = navigator.userAgent.search(/iPhone/i);
+    var iPad = navigator.userAgent.search(/iPad/i);
+    if(Android != -1 || iPhone != -1 || iPad != -1) {
+
+        $('.video-inner').hide();
+        console.log('tab');
+
+
+    } else {
+        console.log('pc');
+    }
+
     $('.btn-send').click(function() {
 
         $('body').find('form:not(this)').children('div').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
@@ -100,14 +122,15 @@ $(document).ready(function() {
             var $form = $(this).closest('form'),
                 name    =    $('input[name="name"]', $form).val(),
                 phone   =    $('input[name="phone"]', $form).val(),
+                email   =    $('input[name="email"]', $form).val(),
                 message =    $('textarea[name="message"]', $form).val();
-            console.log(name, phone, message);
+            console.log(name, phone, email, message);
             $.ajax({
                 type: "POST",
                 url: "form-handler.php",
-                data: {name: name, phone: phone, message: message}
+                data: {name: name, phone: phone, email:email, message: message}
             }).done(function(msg) {
-                console.log(name, phone, message);
+                console.log(name, phone, email, message);
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');
                 $.fancybox(

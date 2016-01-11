@@ -2,6 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
+    $email = $_POST['email'];
     $message = $_POST['message'];
 
 
@@ -10,6 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $thm = 'Вам отправлено сообщение с сайта wedding - ';
     $msg =  "<strong>Имя:</strong> $name <br/>";
     if(isset($phone)){$msg .= "<strong>Телефон:</strong> $phone <br/>";}
+    if(isset($email)){$msg .= "<strong>Email:</strong> $email <br/>";}
     if(isset($message)){$msg .= "<strong>Сообщение:</strong> $message <br/>";}
 
 
