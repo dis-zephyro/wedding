@@ -35,22 +35,6 @@ $('.portfolio-nav.next').click(function(){
 });
 
 
-$('.wedding-thumbs li').click(function (event) {
-    event.preventDefault();
-    var arr = $(this).attr("data-target");
-    var box = $(this).closest('.wedding');
-
-    console.log(arr);
-    console.log(box);
-
-    box.find('.wedding-image img').hide();
-    box.find(arr).show();
-    box.find('.wedding-thumbs li').removeClass('active');
-    $(this).addClass('active');
-});
-
-
-
 
 $('.review-slider').slick({
     dots: true,
