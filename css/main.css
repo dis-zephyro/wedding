@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic&subset=latin,cyrillic);
 @font-face {
   font-family: 'Neris';
@@ -991,8 +992,16 @@ label {
     margin-left: -220px; }
   .b02 .portfolio {
     width: 1120px;
+    overflow: hidden;
     position: relative; }
+    .b02 .portfolio .portfolio-inner {
+      top: 0;
+      left: 0;
+      width: 9999px;
+      overflow: hidden;
+      position: relative; }
     .b02 .portfolio .portfolio-item {
+      float: left;
       width: 1120px;
       margin: 0 auto 30px auto; }
       .b02 .portfolio .portfolio-item .rows {
@@ -1136,6 +1145,52 @@ label {
 .wedding-inner {
   position: relative;
   height: auto !important; }
+
+.jp-video-full {
+  /* яЁртшыю фы  IE6 (full-screen) */
+  width: 480px;
+  height: 270px;
+  /* яЁртшыю фы  IE7 (full-screen) */
+  position: static !important;
+  position: relative; }
+
+.jp-video-full div div {
+  z-index: 1000; }
+
+.jp-video-full .jp-jplayer {
+  top: 0;
+  left: 0;
+  position: fixed !important;
+  position: relative;
+  /* яЁртшыю фы  IE6 (full-screen) */
+  overflow: hidden; }
+
+.jp-video-full .jp-interface {
+  position: absolute !important;
+  position: relative;
+  /* яЁртшыю фы  IE6 (full-screen) */
+  bottom: 0;
+  left: 0; }
+
+.jp-video-full .jp-gui {
+  position: fixed !important;
+  position: static;
+  /* яЁртшыю фы  IE6 (full-screen) */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  /* эр 1 єЁютхэ№ т√°х, ўхь юёЄры№э√х */ }
+
+.jp-video-full .jp-video-play a {
+  font-size: 3em;
+  height: 80px;
+  width: 80px;
+  line-height: 95px; }
+
+.jp-video-full .jp-progress {
+  width: 83%; }
 
 .b03 {
   height: 720px;
