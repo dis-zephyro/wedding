@@ -158,7 +158,7 @@
 
 
 .wedding {
-	width: 1120px;
+	width: 1105px;
 	background: #000;
 	padding: 40px 30px 40px 30px;
 
@@ -169,19 +169,22 @@
 
 		.wedding-col {
 			width: 50%;
+			height: 760px;
 			float: left;
+			overflow: hidden;
 			padding: 0 10px;
+			margin-bottom: 40px;
 		}
 
 		.wedding-col-left {
 			float: left;
-			width: 660px;
+			width: 650px;
 			padding: 0 10px;
 		}
 
 		.wedding-col-right {
 			float: left;
-			width: 420px;
+			width: 412px;
 			padding: 0 10px;
 		}
 
@@ -190,12 +193,13 @@
 		}
 	}
 
+
 	.wedding-head-text {
 		color: #fff;
 		float: left;
-		width: 430px;
-		padding: 0 10px;
-		font-size: 18px;
+		width: 460px;
+		padding: 0 10px 0 0;
+		font-size: 17px;
 		font-weight: 300;
 		line-height: 22px;
 		font-style: italic;
@@ -205,7 +209,7 @@
 
 	.wedding-head-image {
 		float: left;
-		width: 650px;
+		width: 605px;
 		padding: 0 10px;
 		margin-bottom: 20px;
 	}
@@ -223,49 +227,3 @@
 	height: auto !important;
 }
 
-
-
-.jp-video-full {
-	/* правило для IE6 (full-screen) */
-	width:480px;
-	height:270px;
-	/* правило для IE7 (full-screen) */
-	position:static !important;
-	position:relative;
-}
-
-.jp-video-full div div {
-	z-index:1000;
-}
-.jp-video-full .jp-jplayer {
-	top: 0;
-	left: 0;
-	position: fixed !important;
-	position: relative; /* правило для IE6 (full-screen) */
-	overflow: hidden;
-}
-.jp-video-full .jp-interface {
-	position: absolute !important;
-	position: relative; /* правило для IE6 (full-screen) */
-	bottom: 0;
-	left: 0;
-}
-.jp-video-full .jp-gui {
-	position: fixed !important;
-	position: static; /* правило для IE6 (full-screen) */
-	top: 0;
-	left: 0;
-	width:100%;
-	height:100%;
-	z-index:1001; /* на 1 уровень выше, чем остальные */
-}
-
-.jp-video-full .jp-video-play a {
-	font-size: 3em;
-	height: 80px;
-	width: 80px;
-	line-height: 95px;
-}
-.jp-video-full .jp-progress {
-	width: 83%;
-}
