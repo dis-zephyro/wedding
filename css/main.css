@@ -1126,7 +1126,7 @@ label {
   .wedding .wedding-head-text {
     color: #fff;
     float: left;
-    width: 460px;
+    width: 462px;
     padding: 0 10px 0 0;
     font-size: 17px;
     font-weight: 300;
@@ -1136,7 +1136,7 @@ label {
     margin-bottom: 20px; }
   .wedding .wedding-head-image {
     float: left;
-    width: 605px;
+    width: 600px;
     padding: 0 10px;
     margin-bottom: 20px; }
   .wedding .wedding-image {
@@ -1300,7 +1300,7 @@ label {
       width: 100%;
       height: 95px;
       color: #ffffff;
-      display: table;
+      display: block;
       font-size: 14px;
       font-weight: 300;
       line-height: 16px;
@@ -1308,6 +1308,9 @@ label {
       text-align: center;
       position: absolute;
       background: rgba(0, 0, 0, 0.8); }
+      .b05 .service .service-text .service-text-inner {
+        display: table;
+        width: 100%; }
       .b05 .service .service-text span {
         width: 100%;
         height: 95px;
