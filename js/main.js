@@ -55,7 +55,7 @@ $(function() {
 });
 
 
-
+/*
 
 $('.review-slider').slick({
     dots: true,
@@ -64,6 +64,14 @@ $('.review-slider').slick({
     autoplay: false,
     slidesToShow: 1,
     slidesToScroll: 1
+});
+
+*/
+
+$(".review-slider").owlCarousel({
+    navigation : false,
+    singleItem : true,
+    pagination : true
 });
 
 

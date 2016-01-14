@@ -402,11 +402,17 @@ th {
   box-sizing: border-box; }
 
 html {
+  width: 100%;
+  height: 100%;
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+  position: relative; }
 
 body {
+  width: 100%;
+  height: 100%;
   min-width: 1260px;
+  position: relative;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
@@ -850,6 +856,54 @@ label {
       .header .callback-block .btn-callback:active {
         top: 1px; }
 
+.preloader-inner {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  position: fixed;
+  background: #1c1c1c url("../img/preloader.png") 50% 50% no-repeat; }
+  .preloader-inner .wrap {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+
+.preloader {
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  position: relative;
+  margin-top: -150px;
+  margin-left: -150px;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ded072;
+  -webkit-animation: load8 1.6s infinite linear;
+  animation: load8 1.6s infinite linear; }
+
+.preloader,
+.preloader:after {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px; }
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 .footer {
   color: #787878;
   padding: 20px 0;
@@ -1192,20 +1246,21 @@ label {
       width: 500px;
       margin-left: -250px; }
   .b04 .review-slider {
-    position: relative; }
+    position: relative;
+    padding-bottom: 20px; }
     .b04 .review-slider .review-slider-item {
       outline: none; }
-    .b04 .review-slider .slick-dots {
+    .b04 .review-slider .owl-pagination {
       font-size: 0;
       line-height: 0;
       text-align: center; }
-      .b04 .review-slider .slick-dots li {
+      .b04 .review-slider .owl-pagination .owl-page {
         width: 14px;
         height: 14px;
         margin: 0 10px;
         overflow: hidden;
         display: inline-block; }
-        .b04 .review-slider .slick-dots li button {
+        .b04 .review-slider .owl-pagination .owl-page span {
           margin: 0;
           padding: 0;
           width: 14px;
@@ -1218,7 +1273,7 @@ label {
           -moz-border-radius: 50%;
           -ms-border-radius: 50%;
           border-radius: 50%; }
-        .b04 .review-slider .slick-dots li.slick-active button {
+        .b04 .review-slider .owl-pagination .owl-page.active span {
           background: #6c6a63; }
   .b04 .review {
     height: 300px;
@@ -1244,6 +1299,7 @@ label {
       .b04 .review .review-box .review-text {
         height: 160px;
         font-size: 18px;
+        font-size: 18px;
         font-weight: 300;
         line-height: 22px;
         font-style: italic;
@@ -1251,6 +1307,7 @@ label {
         margin-bottom: 18px;
         margin-top: 15px; }
       .b04 .review .review-box .review-author {
+        padding-left: 5px;
         font-size: 28px;
         font-weight: 300;
         line-height: 30px;

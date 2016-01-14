@@ -10,9 +10,18 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="js/vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="js/vendor/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script>
+            $(window).load(function() {
+                $('.preloader-inner').fadeOut().end().delay(400).fadeOut('slow');
+            });
+        </script>
 
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -21,6 +30,15 @@
     </head>
     
     <body>
+
+        <div class="preloader-inner" id="preloader">
+            <div class="wrap">
+                <div class="logo"></div>
+                <div class="preloader">
+                </div>
+            </div>
+        </div>
+
         <header class="header" id="top">
             <div class="container">
                 <ul class="topnav clearfix">
@@ -790,23 +808,24 @@
         </section>
 
         <section class="b07 clearfix" id="b07">
-            <div class="address clearfix">
-                <div class="address-inner">
-                    <h2>Контакты</h2>
-                    <ul>
-                        <li class="adr">г. Санкт-Петербург,<br/>10-я линия Василевского Острова, дом 59</li>
-                        <li class="phone"><a href="tel:+7 812 905 67 80 ">+7 812 905 67 80</a></li>
-                        <li class="email"><a href="mailto:info@imperialwed.ru">info@imperialwed.ru</a></li>
-                    </ul>
-                    <a href="#">
-                        <img src="img/dev_logo.png" alt="">
-                    </a>
+            <div class="container">
+                <div class="address clearfix">
+                    <div class="address-inner">
+                        <h2>Контакты</h2>
+                        <ul>
+                            <li class="adr">г. Санкт-Петербург,<br/>10-я линия Василевского Острова, дом 59</li>
+                            <li class="phone"><a href="tel:+7 812 905 67 80 ">+7 812 905 67 80</a></li>
+                            <li class="email"><a href="mailto:info@imperialwed.ru">info@imperialwed.ru</a></li>
+                        </ul>
+                        <a href="#">
+                            <img src="img/dev_logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="map">
+                    <div id="map"></div>
                 </div>
             </div>
-            <div class="map">
-                <div id="map"></div>
-            </div>
-
         </section>
 
 
@@ -837,13 +856,12 @@
             </div>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/vendor/validator.js"></script>
         <script src="js/vendor/jquery.scrollTo.min.js"></script>
-        <script src="js/vendor/slick/slick.min.js"></script>
+        <script src="js/vendor/owl-carousel/owl.carousel.min.js"></script>
+        <!-- script src="js/vendor/slick/slick.min.js"></script -->
         <script src="js/vendor/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
         <script src="js/main.js"></script>
